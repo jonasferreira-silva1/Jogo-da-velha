@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 4px;
+  background-color: #bc8a17;
+  border: 2px solid #181613;
+  border-radius: 8px; /* Adicionando bordas arredondadas */
+  padding: 4px;
+  box-shadow: 0 0 8px rgba(1, 0, 0, 0.3); /* Adicionando sombra */
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 2em;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 4px; /* Bordas arredondadas para as células */
+  transition: background-color 0.2s; /* Transição suave para o hover */
+}
+
+.cell:hover {
+  background-color: #f5f5f5; /* Cor de fundo mais clara ao passar o mouse */
+}
+
+#restartButton {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #11dd11;
+  color: #101110;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+#restartButton:hover {
+  background-color: #25b725;
+}
